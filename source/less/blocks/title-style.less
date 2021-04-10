@@ -1,0 +1,30 @@
+.title-style {
+  display: flex;
+  align-items: center;
+}
+
+.title-style::after {
+  content: "";
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: 2px;
+  background: @green;
+}
+
+.title-style::after {
+  margin-left: 25px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .title-style::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: @green;
+  }
+
+  .title-style::before {
+    margin-right: 25px;
+  }
+}
