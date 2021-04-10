@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -18,10 +19,10 @@
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Главная</a>
+            <a class="main-navigation__link" href="index.html">Главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Каталог продукции</a>
+            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="#">Подбор программы</a>
@@ -40,7 +41,7 @@
           <li class="questionnaire__cat-data-item">
             <label сlass="questionnaire__cat-data-label" for="name-id">Имя:*</label>
             <input сlass="questionnaire__cat-data-input text-type" type="text" name="name" id="name-id"
-              placeholder="Барсик">
+              placeholder="БАРСИК">
           </li>
           <li class="questionnaire__cat-data-item">
             <label сlass="questionnaire__cat-data-label" for="weight-id">Вес (кг):*</label>
@@ -55,25 +56,25 @@
         </ul>
         <ul class="questionnaire__diet">
           <li class="questionnaire__diet-type">
-            <input class="questionnaire__diet-type-input radio" type="radio" name="slimming" id="slimming-id" checked>
+            <input class="visually-hidden questionnaire__diet-type-input radio" type="radio" name="slimming" id="slimming-id" checked>
             <label class="questionnaire__diet-type-label" for="slimming-id">Похудение</label>
           </li>
           <li class="questionnaire__diet-type">
-            <input class="questionnaire__diet-type-input radio" type="radio" name="weight-gain" id="weight-gain-id">
+            <input class="visually-hidden questionnaire__diet-type-input radio" type="radio" name="weight-gain" id="weight-gain-id">
             <label class="questionnaire__diet-type-label" for="weight-gain-id">Набор массы</label>
           </li>
           <li class="questionnaire__diet-type">
-            <input class="questionnaire__diet-type-input radio" type="radio" name="indefinite" id="indefinite-id">
+            <input class=" visually-hidden questionnaire__diet-type-input radio" type="radio" name="indefinite" id="indefinite-id">
             <label class="questionnaire__diet-type-label" for="indefinite-id">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
         <div class="questionnaire__owner-data">
-          <b>Контактные данные (владельца кота)</b>
+          <b class="questionnaire__owner-data-title">Контактные данные (владельца кота)</b>
           <ul class="questionnaire__owner-data-list">
             <li class="questionnaire__owner-data-item">
               <label class="questionnaire__owner-data-label" for="e-mail-id">E-mail:*</label>
               <input class="questionnaire__owner-data-input email-type" type="email" name="e-mail" id="e-mail-id"
-                placeholder="kuklachev@gmail.com">
+                placeholder="KUKLACHEV@GMAIL.COM">
             </li>
             <li class="questionnaire__owner-data-item">
               <label class="questionnaire__owner-data-label" for="e-mail-id">Телефон:*</label>
