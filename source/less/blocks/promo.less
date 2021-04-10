@@ -28,7 +28,7 @@
 
 .promo__slogan {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding: 0;
   text-align: center;
   width: 250px;
@@ -57,7 +57,7 @@
 @media (min-width: @tablet-width) {
 
   .promo {
-    height: 700px;
+    height: 850px;
   }
 
   .promo__wrapper {
@@ -68,8 +68,19 @@
     color: @black;
   }
 
-  .promo__title, .promo__slogan {
+  .promo__title {
     text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 50px;
+    width: 500px;
+  }
+
+  .promo__slogan {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    width: 300px;
   }
 
   .promo__image {
@@ -79,11 +90,12 @@
   .promo__image-big {
     display: block;
     position: absolute;
-    top: 160px;
-    left: 0;
+    top: 310px;
+    left: 65px;
   }
 
   .promo__button {
     z-index: 2;
+    width: 350px;
   }
 }

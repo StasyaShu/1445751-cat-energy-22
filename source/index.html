@@ -120,8 +120,8 @@
             </li>
           </ul>
           <p class="example-slider__toggles">
-            <a class="toggle-before" href="#">Было</a>
-            <a class="toggle-after" href="#">Стало</a>
+            <a class="toggle-before toggle" href="#">Было</a>
+            <a class="toggle-after toggle" href="#">Стало</a>
           </p>
         </div>
       </section>
@@ -131,11 +131,12 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="footer-contacts">
-        <b class="footer-contacts__dillers">Приглашаем к сотрудничеству дилеров!</b>
-        <address class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <b class="footer-contacts__dillers">Приглашаем<br>к сотрудничеству дилеров!</b>
+        <address class="footer-contacts__address"><p class="footer-contacts__street">ул. Большая Конюшенная, д. 19/8</p><p class="footer-contacts__city">Санкт-Петербург</p></address>
       </div>
       <div class="footer-map">
-        <img src="img/map.png" width="320" height="362" alt="Отметка на карте с местоположением магазина">
+        <img class="footer-map__small" src="img/map.png" width="320" height="362" alt="Отметка на карте с местоположением магазина">
+        <img class="footer-map__big" src="img/map-tablet.png" width="768" height="400" alt="Отметка на карте с местоположением магазина">
       </div>
       <div class="footer-logo">
         <a class="footer-logo__link" href="#">
@@ -160,7 +161,7 @@
         </li>
       </ul>
       <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p>HTML Academy</p>
+        <p class="page-footer__htmlacademy-name">HTML Academy</p>
         <!-- TODO: HTML Academy logo при помощи спрайтов -->
       </a>
     </div>

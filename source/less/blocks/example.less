@@ -1,3 +1,8 @@
+.example {
+  background-color: @grey-bg-example;
+  margin-bottom: 60px;
+}
+
 .example__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -52,7 +57,6 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
   color: @black;
   margin-bottom: 10px;
 }
@@ -84,7 +88,6 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
   color: @black;
   margin-bottom: 10px;
 }
@@ -99,7 +102,6 @@
   font-size: 12px;
   line-height: 12px;
   color: @grey-input;
-  margin-bottom: 40px;
 }
 
 .example__loses {
@@ -116,13 +118,17 @@
   text-align: center;
   text-transform: uppercase;
   color: @black;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 @media (min-width: @tablet-width) {
+  .example {
+    background-color: @white;
+  }
+
   .example__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 150px 150px 1fr;
     grid-template-rows: max-content max-content max-content;
   }
 
@@ -131,6 +137,8 @@
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 4;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .example__description {
@@ -138,15 +146,40 @@
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
-    width: 600px;
+    width: 700px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+
+  .example__kilos {
+    justify-content: center;
+  }
+
+  .example__kilos li:first-child {
+    font-size: 30px;
+    line-height: 37px;
   }
 
   .example__kilos li:last-child {
     width: 180px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__time {
+    justify-content: center;
+  }
+
+  .example__time li:first-child {
+    font-size: 30px;
+    line-height: 37px;
   }
 
   .example__time li:last-child {
     width: 180px;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .example__loses {
@@ -154,7 +187,12 @@
     grid-row-end: 4;
     grid-column-start: 3;
     grid-column-end: 4;
-    width: 130px;
+    width: 190px;
     text-align: right;
+    padding-left: 180px;
+    padding-top: 10px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
