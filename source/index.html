@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <!-- TODO: картинки потом подключить при помощи спрайтов -->
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-navigation__wrapper">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="#" width="36" height="36" alt="img-лого">
+        <img src="#" width="36" height="36" alt="n-лого">
+        <!-- TODO: картинки потом подключить при помощи спрайтов -->
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="#">Главная</a>
@@ -27,8 +30,8 @@
             <a class="main-navigation__link" href="#">Подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -38,8 +41,10 @@
         <div class="promo__wrapper">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <img src="img/can-mobile.png" width="280" height="270"
+          <img class="promo__image" src="img/can-mobile.png" width="280" height="270"
             alt="Изображение корма Cat Energy Pro со вкусом курицы">
+          <img class="promo__image-big" src="img/can-tablet.png" width="609" height="709"
+            alt="Большое изображение корма Cat Energy Pro со вкусом курицы">
           <a class="promo__button button-action" href="#">Подобрать программу</a>
         </div>
       </section>
@@ -51,7 +56,6 @@
             <p class="slimming__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="slimming__link" href="#">Каталог Slim</a>
-            <!-- TODO: Стрелку добавить через CSS -->
           </div>
           <div class="weight-gain">
             <h3 class="weight-gain__title">Набор массы</h3>
@@ -59,7 +63,6 @@
               Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="weight-gain__link" href="#">Каталог Pro</a>
-            <!-- TODO: Стрелку добавить через CSS -->
           </div>
         </div>
       </section>
@@ -67,10 +70,22 @@
         <div class="description__wrapper">
           <h2 class="description__title">Как это работает</h2>
           <ul class="description__list">
-            <li class="description__item">Функциональное питание содержит только полезные питательные вещества.</li>
-            <li class="description__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-            <li class="description__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-            <li class="description__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+            <li class="description__item">
+              <p>1</p>
+              <p>Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="description__item">
+              <p>2</p>
+              <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            </li>
+            <li class="description__item">
+              <p>3</p>
+              <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+            </li>
+            <li class="description__item">
+              <p>4</p>
+              <p>Уже через месяц наслаждайтесь изменениями к лучшему<br class="description__item-helper">вашего питомца!</p>
+            </li>
           </ul>
         </div>
       </section>
@@ -82,17 +97,15 @@
             по
             16
             часов в день. </p>
-          <table class="example__table">
-            <tr>
-              <td>5 кг</td>
-              <td>60 дней</td>
-            </tr>
-            <tr>
-              <th>снижение веса</th>
-              <th>затрачено времени</th>
-            </tr>
-          </table>
-          <b>Затраты на питание: 15 000 РУБ.</b>
+          <ul class="example__kilos">
+            <li>5 кг</li>
+            <li>снижение веса</li>
+          </ul>
+          <ul class="example__time">
+            <li>60 дней</li>
+            <li>затрачено времени</li>
+          </ul>
+          <b class="example__loses">Затраты на питание: 15 000 РУБ.</b>
         </div>
       </section>
       <section class="example-slider">
@@ -107,8 +120,8 @@
             </li>
           </ul>
           <p class="example-slider__toggles">
-            <a class="toggle-before" href="#">Было</a>
-            <a class="toggle-after" href="#">Стало</a>
+            <a class="toggle-before toggle" href="#">Было</a>
+            <a class="toggle-after toggle" href="#">Стало</a>
           </p>
         </div>
       </section>
@@ -118,11 +131,12 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="footer-contacts">
-        <b class="footer-contacts__dillers">Приглашаем к сотрудничеству дилеров!</b>
-        <address class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <b class="footer-contacts__dillers">Приглашаем<br>к сотрудничеству дилеров!</b>
+        <address class="footer-contacts__address"><p class="footer-contacts__street">ул. Большая Конюшенная, д. 19/8</p><p class="footer-contacts__city">Санкт-Петербург</p></address>
       </div>
       <div class="footer-map">
-        <img src="img/map.png" width="320" height="362" alt="Отметка на карте с местоположением магазина">
+        <img class="footer-map__small" src="img/map.png" width="320" height="362" alt="Отметка на карте с местоположением магазина">
+        <img class="footer-map__big" src="img/map-tablet.png" width="768" height="400" alt="Отметка на карте с местоположением магазина">
       </div>
       <div class="footer-logo">
         <a class="footer-logo__link" href="#">
@@ -147,7 +161,7 @@
         </li>
       </ul>
       <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p>HTML Academy</p>
+        <p class="page-footer__htmlacademy-name">HTML Academy</p>
         <!-- TODO: HTML Academy logo при помощи спрайтов -->
       </a>
     </div>

@@ -1,0 +1,30 @@
+@media (min-width: @tablet-width) {
+
+  .toggle-after {
+    position: relative;
+  }
+
+  .toggle-after::before {
+    position: absolute;
+    content: "";
+    width: 428px;
+    height: 6px;
+    background-color: @dark-grey-bar;
+    border-radius: 6px;
+    top: 12px;
+    right: 75px;
+  }
+
+  .toggle-after::after {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    background-color: @white;
+    border: 1px solid @grey-border;
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: -3px;
+    left: -260px;
+  }
+}

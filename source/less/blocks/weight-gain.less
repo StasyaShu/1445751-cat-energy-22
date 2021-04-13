@@ -1,0 +1,115 @@
+.weight-gain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: @grey;
+}
+
+.weight-gain__title {
+  font-family: "Oswald-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: @black;
+  display: block;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.weight-gain__description {
+  display: block;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: @grey-input;
+  position: relative;
+}
+
+.weight-gain__description::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 240px;
+  height: 1px;
+  background-color: @grey-bg;
+  display: block;
+}
+
+.weight-gain__link {
+  text-decoration: none;
+  color: @black;
+  font-family: "Oswald-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  align-self: flex-start;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.weight-gain__link::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: @black;
+  top: 7px;
+  right: -36px;
+}
+
+.weight-gain__link::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+	height: 0px;
+	border-top: 7px solid transparent;
+	border-left: 7px solid @black;
+	border-bottom: 7px solid transparent;
+  top: 1px;
+  left: 115px;
+}
+
+@media (min-width: @tablet-width) {
+  .weight-gain {
+    align-items: flex-start;
+  }
+
+  .weight-gain__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .weight-gain__description {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .weight-gain__description::after {
+    display: none;
+  }
+
+  .weight-gain__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .weight-gain__link::after {
+    top: 15px;
+  }
+
+  .weight-gain__link::before {
+    top: 9px;
+    left: 135px;
+  }
+}
