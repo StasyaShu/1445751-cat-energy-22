@@ -11,9 +11,14 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
-        <img src="#" width="36" height="36" alt="img-лого">
-        <img src="#" width="36" height="36" alt="n-лого">
-        <!-- TODO: картинки потом подключить при помощи спрайтов -->
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-header-tablet.png">
+          <source media="(min-width: 1220px)" srcset="img/logo-header-desktop.png">
+          <img class="page-header__logo-cat" src="img/logo-header-mobile.svg" width="34" height="38"
+            alt="Картинка-логотип магазина Catenergy">
+          <img class="page-header__logo-name" src="img/logo-header-catenergy-mobile.svg" width="101" height="18"
+            alt="Наименование-логотип магазина Catenergy">
+        </picture>
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">
@@ -21,7 +26,7 @@
         </button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Главная</a>
+            <a class="main-navigation__link active" href="#">Главная</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
@@ -45,7 +50,9 @@
             alt="Изображение корма Cat Energy Pro со вкусом курицы">
           <img class="promo__image-big" src="img/can-tablet.png" width="609" height="709"
             alt="Большое изображение корма Cat Energy Pro со вкусом курицы">
-          <a class="promo__button button-action" href="#">Подобрать программу</a>
+          <div class="promo__button">
+            <a class="button-action" href="#">Подобрать программу</a>
+          </div>
         </div>
       </section>
       <section class="diet-direction">
@@ -84,7 +91,8 @@
             </li>
             <li class="description__item">
               <p>4</p>
-              <p>Уже через месяц наслаждайтесь изменениями к лучшему<br class="description__item-helper">вашего питомца!</p>
+              <p>Уже через месяц наслаждайтесь изменениями к лучшему<br class="description__item-helper">вашего питомца!
+              </p>
             </li>
           </ul>
         </div>
@@ -132,11 +140,16 @@
     <div class="page-footer__wrapper">
       <div class="footer-contacts">
         <b class="footer-contacts__dillers">Приглашаем<br>к сотрудничеству дилеров!</b>
-        <address class="footer-contacts__address"><p class="footer-contacts__street">ул. Большая Конюшенная, д. 19/8</p><p class="footer-contacts__city">Санкт-Петербург</p></address>
+        <address class="footer-contacts__address">
+          <p class="footer-contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="footer-contacts__city">Санкт-Петербург</p>
+        </address>
       </div>
       <div class="footer-map">
-        <img class="footer-map__small" src="img/map.png" width="320" height="362" alt="Отметка на карте с местоположением магазина">
-        <img class="footer-map__big" src="img/map-tablet.png" width="768" height="400" alt="Отметка на карте с местоположением магазина">
+        <img class="footer-map__small" src="img/map.png" width="320" height="362"
+          alt="Отметка на карте с местоположением магазина">
+        <img class="footer-map__big" src="img/map-tablet.png" width="768" height="400"
+          alt="Отметка на карте с местоположением магазина">
       </div>
       <div class="footer-logo">
         <a class="footer-logo__link" href="#">

@@ -1,115 +1,70 @@
 .slimming {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 10px;
-  background-color: @grey;
+  .diet-direction-section;
+
+  @media @tablet-width {
+    align-items: flex-start;
+  }
 }
 
 .slimming__title {
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  color: @black;
-  display: block;
-  margin-bottom: 20px;
-  padding: 0;
+  .diet-direction-title;
+
+  @media @tablet-width {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .slimming__description {
-  display: block;
-  margin-bottom: 40px;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: @grey-input;
-  position: relative;
-}
+  .diet-direction-description;
 
-.slimming__description::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -20px;
-  width: 240px;
-  height: 1px;
-  background-color: @grey-bg;
-  display: block;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 240px;
+    height: 1px;
+    background-color: @grey-bg;
+    display: block;
+  }
+
+  @media @tablet-width {
+    width: 400px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .slimming__link {
   text-decoration: none;
   color: @black;
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   align-self: flex-start;
   position: relative;
   margin-bottom: 30px;
-}
+  .oswald-regular;
 
-.slimming__link::after {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 2px;
-  background-color: @black;
-  top: 7px;
-  right: -36px;
-}
-
-.slimming__link::before {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border-top: 7px solid transparent;
-  border-left: 7px solid @black;
-  border-bottom: 7px solid transparent;
-  top: 1px;
-  left: 120px;
-}
-
-@media (min-width: @tablet-width) {
-  .slimming {
-    align-items: flex-start;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 11px;
+    background-image: url("../img/shape-arrow-forward.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 3px;
+    right: -36px;
   }
 
-  .slimming__title {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .slimming__description {
-    width: 400px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .slimming__description::after {
-    display: none;
-  }
-
-  .slimming__link {
+  @media @tablet-width {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .slimming__link::after {
-    top: 15px;
-  }
-
-  .slimming__link::before {
-    top: 9px;
-    left: 140px;
   }
 }

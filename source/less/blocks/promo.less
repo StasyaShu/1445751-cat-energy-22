@@ -1,6 +1,13 @@
 .promo {
   display: block;
   margin-bottom: 30px;
+  background-color: lightblue;
+  // TODO: заменить потом фон
+  width: 100%;
+
+  @media @tablet-width {
+    height: 850px;
+  }
 }
 
 .promo__wrapper {
@@ -8,26 +15,43 @@
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 20px 0px;
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
   color: @white;
-  background-color: @green-bg;
+  .wrapper;
+  padding-top: 27px;
+
+  @media @tablet-width {
+    align-items: flex-start;
+    padding-left: 100px;
+    position: relative;
+    background-color: @white;
+    color: @black;
+  }
 }
 
 .promo__title {
   display: block;
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 30px;
   padding: 0;
   text-align: center;
   width: 250px;
   font-size: 36px;
   line-height: 36px;
+  color: @white;
+  .oswald-regular;
+
+  @media @tablet-width {
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 50px;
+    width: 500px;
+  }
 }
 
 .promo__slogan {
   display: block;
+  margin: 0;
   margin-bottom: 50px;
   padding: 0;
   text-align: center;
@@ -35,67 +59,50 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-}
-
-.promo__button {
-  display: block;
-  width: 280px;
-  height: 30px;
-  background-color: @green;
-  text-decoration: none;
   color: @white;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  padding-top: 10px;
-}
+  .oswald-regular;
 
-.promo__image-big {
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-
-  .promo {
-    height: 850px;
-  }
-
-  .promo__wrapper {
-    align-items: flex-start;
-    padding-left: 100px;
-    position: relative;
-    background-color: @white;
-    color: @black;
-  }
-
-  .promo__title {
-    text-align: left;
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 50px;
-    width: 500px;
-  }
-
-  .promo__slogan {
+  @media @tablet-width {
     text-align: left;
     font-size: 20px;
     line-height: 20px;
     width: 300px;
   }
+}
 
-  .promo__image {
-    display: none;
+.promo__button {
+  display: block;
+  width: 280px;
+  height: 40px;
+  background-color: @green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: @dark-green;
   }
 
-  .promo__image-big {
+  @media @tablet-width {
+    z-index: 2;
+    width: 240px;
+  }
+}
+
+.promo__image-big {
+  display: none;
+
+  @media @tablet-width {
     display: block;
     position: absolute;
     top: 310px;
     left: 65px;
   }
+}
 
-  .promo__button {
-    z-index: 2;
-    width: 350px;
+@media @tablet-width {
+
+  .promo__image {
+    display: none;
   }
 }
