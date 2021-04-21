@@ -25,9 +25,10 @@
   justify-content: space-between;
   width: 200px;
   align-self: center;
+  align-items: center;
 
   @media @tablet-width {
-    width: 570px;
+    width: 600px;
     align-self: flex-start;
     padding-left: 60px;
   }
@@ -51,5 +52,53 @@
 @media @tablet-width {
   .example-slider__item img {
     display: none;
+  }
+}
+
+.example-slider__scale {
+  display: block;
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  background-color: @white;
+  border: 1px solid @grey-border;
+  position: relative;
+  margin-top: 3px;
+
+  @media @tablet-width {
+    width: 400px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: @dark-grey-bar;
+  }
+}
+
+.example-slider__scale-toggle {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  display: block;
+  width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: @green;
+
+  @media @tablet-width {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: @green;
+    top: -15px;
+    left: 50%;
+    border: 13px solid @white;
+    box-shadow: 0 0 0 1px @grey-border;
+
+    &:hover {
+      box-shadow: 0 1px 2px 2px @grey-border;
+    }
+
+    &:active {
+      box-shadow: 0 1px 2px 2px @green;
+    }
   }
 }
