@@ -61,10 +61,22 @@
     background-position: 0 0;
     top: 3px;
     right: -36px;
+
+    &:hover {
+      width: 32px;
+      height: 12px;
+      background-image: url("../img/shape-arrow-forward-big");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
   }
 
   @media @tablet-width {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      top: 10px;
+    }
   }
 }

@@ -1,8 +1,31 @@
 .promo {
   display: block;
   margin-bottom: 30px;
-  background-color: lightblue;
-  // TODO: заменить потом фон
+  position: relative;
+  height: 550px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: @green-bg;
+    width: 320px;
+    height: 302px;
+    background-position: top center;
+    z-index: -3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/background-cat-mobile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0px;
+    z-index: -4;
+    width: 320px;
+    height: 302px;
+  }
 
   @media @tablet-width {
     height: 850px;
@@ -16,8 +39,9 @@
   align-items: center;
   margin: 0;
   color: @white;
-  .wrapper;
   padding-top: 27px;
+  .wrapper;
+
 
   @media @tablet-width {
     align-items: flex-start;
@@ -28,7 +52,12 @@
 }
 
 .promo__wrapper picture {
-  z-index: -2;
+  z-index: -1;
+
+  @media @tablet-width {
+    z-index: 0;
+    transform: translateX(250px) translateY(-120px);
+  }
 }
 
 .promo__title {
@@ -49,6 +78,7 @@
     line-height: 60px;
     margin-bottom: 50px;
     width: 500px;
+    color: @black;
   }
 }
 
@@ -70,6 +100,7 @@
     font-size: 20px;
     line-height: 20px;
     width: 300px;
+    color: @black;
   }
 }
 

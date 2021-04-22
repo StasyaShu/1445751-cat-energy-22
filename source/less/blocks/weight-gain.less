@@ -33,10 +33,10 @@
     width: 340px;
     font-size: 16px;
     line-height: 24px;
-  }
 
-  &::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -66,5 +66,9 @@
   @media @tablet-width {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      top: 10px;
+    }
   }
 }
