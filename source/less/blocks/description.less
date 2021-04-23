@@ -36,6 +36,14 @@
     row-gap: 30px;
     column-gap: 130px;
     counter-reset: item;
+    position: relative;
+  }
+
+  @media @desktop-width {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -43,6 +51,27 @@
   display: block;
   margin: 20px 0px;
   padding: 5px 0px;
+
+  @media @tablet-width {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 190px;
+
+    &::before {
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      color: @grey;
+      z-index: -1;
+      top: -40px;
+      right: 20px;
+      .oswald-regular;
+    }
+  }
 
   p {
     font-size: 14px;
@@ -58,19 +87,6 @@
       width: 230px;
       font-size: 16px;
       line-height: 24px;
-    }
-  }
-
-  @media @tablet-width {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 190px;
-
-    &::before {
-      counter-increment: item;
-      content: "counter: item";
     }
   }
 }
