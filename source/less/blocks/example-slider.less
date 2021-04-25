@@ -1,49 +1,105 @@
 .example-slider {
   background-color: @grey-bg-example;
   display: block;
-  margin-bottom: 40px;
+  margin: 0;
+  padding: 20px 0px;
+  width: 100%;
 }
 
 .example-slider__wrapper {
   display: flex;
   flex-direction: column;
+  .wrapper;
 }
 
 .example-slider__list {
   list-style: none;
-  margin-bottom: 30px;
+  margin: 10px 0px;
   padding: 0;
   display: flex;
 }
 
 .example-slider__toggles {
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: @black;
-  margin-bottom: 30px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 200px;
   align-self: center;
-}
+  align-items: center;
 
-@media (min-width: @tablet-width) {
-  .example-slider__item img {
-    display: none;
-  }
-
-  .example-slider__toggles {
-    width: 570px;
+  @media @tablet-width {
+    width: 600px;
     align-self: flex-start;
     padding-left: 60px;
+  }
+}
+
+.example-slider__link {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @black;
+  text-decoration: none;
+  display: block;
+  .oswald-regular;
+
+  @media @tablet-width {
     font-size: 20px;
     line-height: 30px;
   }
+}
 
+@media @tablet-width {
+  .example-slider__item img {
+    display: none;
+  }
+}
+
+.example-slider__scale {
+  display: block;
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  background-color: @white;
+  border: 1px solid @grey-border;
+  position: relative;
+  margin-top: 3px;
+
+  @media @tablet-width {
+    width: 400px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: @dark-grey-bar;
+  }
+}
+
+.example-slider__scale-toggle {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  display: block;
+  width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: @green;
+
+  @media @tablet-width {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: @green;
+    top: -15px;
+    left: 50%;
+    border: 13px solid @white;
+    box-shadow: 0 0 0 1px @grey-border;
+
+    &:hover {
+      box-shadow: 0 1px 2px 2px @grey-border;
+    }
+
+    &:active {
+      box-shadow: 0 1px 2px 2px @green;
+    }
+  }
 }

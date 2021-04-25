@@ -7,33 +7,47 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: "Oswald-Regular", Arial, sans-serif;
   color: @grey-input;
   text-transform: uppercase;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   position: relative;
   border-bottom: 1px solid @grey-bg;
   border-width: 100%;
+  .oswald-regular;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: none;
+  }
 }
 
 .questionnaire__cat-data-item {
   margin: 30px 0px;
   padding: 0;
   display: flex;
-}
+  align-items: center;
 
-.questionnaire__cat-data-label {
-  display: block;
-  margin-right: 10px;
-  width: 60px;
-}
+  input {
+    width: 100%;
+    display: block;
+    margin-left: 15px;
+    height: 46px;
+    border: 1px solid @pale-grey-border;
 
-.questionnaire__cat-data-input {
-  display: block;
-  width: 100%;
+    &:hover {
+      border: 1px solid @grey-border;
+    }
+
+    &:focus {
+      border: 2px solid @grey-input;
+    }
+  }
+
+  label {
+    display: block;
+  }
 }
 
 .questionnaire__diet {
@@ -43,13 +57,19 @@
   margin-bottom: 30px;
   border-bottom: 1px solid @grey-bg;
   border-width: 100%;
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @grey-checkbox;
+  .oswald-regular;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid @grey-bg;
+    padding-left: 30px;
+    margin-bottom: 60px;
+  }
 }
 
 .questionnaire__diet-type {
@@ -76,17 +96,25 @@
   border: 1px solid @grey-border;
   border-radius: 50%;
   display: block;
+
+  &:hover {
+    border: 1px solid @dark-grey-border;
+  }
 }
 
 .questionnaire__diet-type-input:checked+label::after {
   content: "";
   position: absolute;
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
   background-color: @green;
   border-radius: 50%;
-  top: 8px;
+  top: 7px;
   left: 7px;
+
+  &:hover {
+    border: 1px solid @dark-grey-border;
+  }
 }
 
 .questionnaire__owner-data {
@@ -95,43 +123,65 @@
 }
 
 .questionnaire__owner-data-title {
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 26px;
   color: @black;
   display: block;
-  margin-bottom: 30px;
+  .oswald-regular;
+
+  @media @tablet-width {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 60px;
+  }
 }
 
 .questionnaire__owner-data-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @grey-input;
+  .oswald-regular;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .questionnaire__owner-data-item {
   margin: 30px 0px;
   display: flex;
+  align-items: center;
 }
 
 .questionnaire__owner-data-label {
   display: block;
   width: 70px;
   margin-right: 10px;
+
+  @media @tablet-width {
+    width: 90px;
+  }
 }
 
 .questionnaire__owner-data-input {
   width: 100%;
   display: block;
+  margin-left: 15px;
+  height: 46px;
+  border: 1px solid @pale-grey-border;
+
+  &:hover {
+    border: 1px solid @grey-border;
+  }
+
+  &:focus {
+    border: 2px solid @grey-input;
+  }
 }
 
 .questionnaire__comment {
@@ -141,41 +191,59 @@
 }
 
 .questionnaire__comment-title {
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 26px;
   color: @black;
   display: block;
   margin-bottom: 30px;
+  .oswald-regular;
+
+  @media @tablet-width {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 60px;
+  }
 }
 
 .questionnaire__comment-textarea {
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @grey-input;
   padding: 10px 10px;
+  border: 1px solid @pale-grey-border;
+  .oswald-regular;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .questionnaire__extra {
   display: flex;
   flex-direction: column;
+
+  @media @tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .questionnaire__extra-title {
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 26px;
   color: @black;
   display: block;
   margin-bottom: 40px;
+  .oswald-regular;
+
+  @media @tablet-width {
+    font-size: 36px;
+    line-height: 36px;
+    width: 100%;
+  }
 }
 
 .questionnaire__extra-list {
@@ -184,13 +252,22 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @black;
+  .oswald-regular;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 30px;
+    column-gap: 150px;
+    row-gap: 30px;
+  }
 }
 
 .questionnaire__extra-item {
@@ -204,6 +281,11 @@
   user-select: none;
   padding-left: 45px;
   line-height: 30px;
+
+  @media @tablet-width {
+    line-height: 40px;
+    padding-left: 65px;
+  }
 }
 
 .questionnaire__extra-input+label::before {
@@ -215,6 +297,15 @@
   border: 1px solid @grey-border;
   top: 0;
   left: 0;
+
+  &:hover {
+    border: 1px solid @dark-grey-border;
+  }
+
+  @media @tablet-width {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .questionnaire__extra-input:checked+label::after {
@@ -229,12 +320,14 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+
+  @media @tablet-width {
+    top: 13px;
+    left: 13px;
+  }
 }
 
 .questionnaire__submit-button {
-  font-family: "Oswald-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -243,6 +336,14 @@
   height: 40px;
   border: none;
   background-color: @green;
+  .oswald-regular;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 0;
+    height: 52px;
+    margin-right: 70px;
+  }
 }
 
 .questionnaire__remark {
@@ -252,96 +353,8 @@
   font-size: 14px;
   line-height: 16px;
   color: @black;
-}
 
-
-@media (min-width: @tablet-width) {
-  .questionnaire__cat-data-list {
-    font-size: 20px;
-    line-height: 30px;
-    border-bottom: none;
-  }
-
-  .questionnaire__diet {
-    font-size: 20px;
-    line-height: 30px;
-    border: 1px solid @grey-bg;
-    padding-left: 30px;
-    margin-bottom: 60px;
-  }
-
-  .questionnaire__owner-data-title {
-    font-size: 36px;
-    line-height: 36px;
-    margin-bottom: 60px;
-  }
-
-  .questionnaire__owner-data-list {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .questionnaire__owner-data-label {
-    width: 90px;
-  }
-
-  .questionnaire__comment-title {
-    font-size: 36px;
-    line-height: 36px;
-    margin-bottom: 60px;
-  }
-
-  .questionnaire__comment-textarea {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .questionnaire__extra {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .questionnaire__extra-title {
-    font-size: 36px;
-    line-height: 36px;
-    width: 100%;
-  }
-
-  .questionnaire__extra-list {
-    font-size: 20px;
-    line-height: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-bottom: 30px;
-    column-gap: 150px;
-    row-gap: 30px;
-  }
-
-  .questionnaire__extra-label {
-    line-height: 40px;
-    padding-left: 65px;
-  }
-
-  .questionnaire__extra-input+label::before {
-    width: 40px;
-    height: 40px;
-  }
-
-  .questionnaire__extra-input:checked+label::after {
-    top: 13px;
-    left: 13px;
-  }
-
-  .questionnaire__submit-button {
-    font-size: 20px;
-    line-height: 0;
-    height: 52px;
-    margin-right: 70px;
-  }
-
-  .questionnaire__remark {
+  @media @tablet-width {
     font-size: 16px;
     line-height: 16px;
     width: 180px;
