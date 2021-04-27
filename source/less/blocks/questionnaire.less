@@ -3,6 +3,15 @@
   flex-direction: column;
 }
 
+.questionnaire-cat {
+
+  @media @desktop-width {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .questionnaire__cat-data-list {
   list-style: none;
   margin: 0;
@@ -35,6 +44,8 @@
     margin-left: 15px;
     height: 46px;
     border: 1px solid @pale-grey-border;
+
+
 
     &:hover {
       border: 1px solid @grey-border;
@@ -316,7 +327,7 @@
   left: 8px;
   width: 18px;
   height: 14px;
-  background-image: url(../../img/checkbox-on.svg);
+  background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -330,13 +341,6 @@
 .questionnaire__submit-button {
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  color: @white;
-  width: 280px;
-  height: 40px;
-  border: none;
-  background-color: @green;
-  .oswald-regular;
 
   @media @tablet-width {
     font-size: 20px;
@@ -347,12 +351,10 @@
 }
 
 .questionnaire__remark {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: @black;
+  .arial;
 
   @media @tablet-width {
     font-size: 16px;

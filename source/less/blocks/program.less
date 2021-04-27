@@ -1,4 +1,4 @@
-.slimming {
+.program {
   .diet-direction-section;
 
   @media @tablet-width {
@@ -11,7 +11,7 @@
   }
 }
 
-.slimming__title {
+.program__title {
   .diet-direction-title;
 
   @media @tablet-width {
@@ -20,7 +20,7 @@
   }
 }
 
-.slimming__description {
+.program__description {
   .diet-direction-description;
 
   &::after {
@@ -45,7 +45,7 @@
   }
 }
 
-.slimming__link {
+.program__link {
   text-decoration: none;
   color: @black;
   font-size: 16px;
@@ -54,26 +54,37 @@
   align-self: flex-start;
   position: relative;
   margin-bottom: 30px;
+  display: block;
   .oswald-regular;
 
   &::after {
     content: "";
     position: absolute;
+    display: block;
     width: 25px;
     height: 11px;
     background-image: url("../img/shape-arrow-forward.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     top: 3px;
-    right: -36px;
+    right: -45px;
+  }
 
-    &:hover {
-      width: 32px;
-      height: 12px;
-      background-image: url("../img/shape-arrow-forward-big");
+  &:hover {
+
+    &::after {
+      width: 34px;
+      height: 13px;
+      background-image: url("../img/shape-arrow-forward-big.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+      display: block;
+      transform: translateX(10px);
     }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media @tablet-width {

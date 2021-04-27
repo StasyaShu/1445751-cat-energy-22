@@ -8,8 +8,3 @@
 		</g>
 	</symbol>
 </svg>
-
-<svg width="50" height="50">
-	<use xlink:href="#cat-slim-mobile">
-	</use>
-</svg>

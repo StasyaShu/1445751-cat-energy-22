@@ -5,6 +5,17 @@
   flex-direction: column;
   border-top: 1px solid @grey-border-catalog;
   padding-bottom: 20px;
+
+  @media @tablet-width {
+    display: block;
+    width: 324px;
+    height: 511px;
+  }
+
+  @media @desktop-width {
+    width: 245px;
+    height: 512px;
+  }
 }
 
 .goods-card__title {
