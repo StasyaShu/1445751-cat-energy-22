@@ -4,10 +4,13 @@
 }
 
 .questionnaire-cat {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 
   @media @desktop-width {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -29,6 +32,10 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: none;
+  }
+
+  @media @desktop-width {
+    width: 569px;
   }
 }
 
@@ -80,6 +87,10 @@
     border: 1px solid @grey-bg;
     padding-left: 30px;
     margin-bottom: 60px;
+  }
+
+  @media @desktop-width {
+    width: 569px;
   }
 }
 
