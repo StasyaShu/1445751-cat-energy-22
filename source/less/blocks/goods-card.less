@@ -5,6 +5,8 @@
   flex-direction: column;
   border-top: 1px solid @grey-border-catalog;
   padding-bottom: 20px;
+  padding-top: 20px;
+  align-items: flex-end;
 
   @media @tablet-width {
     display: block;
@@ -25,14 +27,31 @@
   color: @grey-checkbox;
   text-decoration: none;
   width: 80px;
+  text-align: left;
   .oswald-regular;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media @desktop-width {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .goods-card__properties {
   font-size: 12px;
   line-height: 16px;
   color: @grey-input;
+  margin: 10px 0;
   .arial;
+
+  @media @tablet-width {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .goods-card__button {
