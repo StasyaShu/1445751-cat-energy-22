@@ -1,6 +1,10 @@
 .main-goods {
   display: flex;
   flex-direction: column;
+
+  @media @desktop-width {
+    padding: 10px 20px;
+  }
 }
 
 .main-goods__title {
@@ -26,6 +30,11 @@
   @media @tablet-width {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media @desktop-width {
+    justify-content: space-between;
   }
 }
 
@@ -34,6 +43,11 @@
   @media @tablet-width {
     display: block;
     width: 324px;
-    height: 511px;
+    margin: 20px 0px;
+  }
+
+  @media @desktop-width {
+    width: 245px;
+    height: 512px;
   }
 }
