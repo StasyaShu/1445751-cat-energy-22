@@ -12,12 +12,13 @@
     <div class="page-header__wrapper">
       <a class="page-header__logo logo">
         <picture>
-          <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="logo__img logo__img--icon" src="img/logo-header-mobile.svg" width="34" height="38"
             alt="Картинка-логотип магазина Cat Energy">
         </picture>
-        <img class="logo__img logo__img--text" src="img/logo-header-catenergy-mobile.svg" width="101" height="18" alt="Cat Energy">
+        <img class="logo__img logo__img--text" src="img/logo-header-catenergy-mobile.svg" width="101" height="18"
+          alt="Cat Energy">
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">
@@ -46,12 +47,13 @@
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1220px)" srcset="">
-            <source media="(min-width: 768px)" srcset="">
-            <img class="promo__image" src="img/can-mobile.png" width="280" height="270"
-              alt="Изображение корма Cat Energy Pro со вкусом курицы">
+            <source media="(min-width: 1220px)"
+              srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
+            <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+              width="280" height="270" alt="Изображение корма Cat Energy Pro со вкусом курицы">
           </picture>
-          <a class="promo__button button" href="#">Подобрать программу</a>
+          <a class="promo__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="diet-direction">
@@ -141,7 +143,12 @@
         <address class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></address>
       </div>
       <div class="footer-map">
-        <!-- TODO: img обернуть в picture -->
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+          <img class="footer-map__image" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" width="320" height="362"
+            alt="Карта магазина Cat Energy">
+        </picture>
       </div>
       <div class="footer-logo">
         <a class="footer-logo__link" href="#">
