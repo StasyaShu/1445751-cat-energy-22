@@ -1,14 +1,15 @@
 .goods-card {
   width: 100%;
   width: inherit;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   border-top: 1px solid @grey-border-catalog;
-  padding-bottom: 40px;
   padding-top: 20px;
-  align-items: flex-end;
 
   @media @tablet-width {
+    display: flex;
+    flex-direction: column;
     width: 324px;
     align-items: center;
     background-color: @grey;
@@ -18,6 +19,33 @@
     width: 245px;
   }
 }
+
+.goods-card__image {
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.goods-card__img {
+
+  @media @tablet-width {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.goods-card__img--small {
+
+  @media @tablet-width {
+    width: 161px;
+    height: 172px;
+  }
+}
+
 
 .goods-card__title {
   font-size: 16px;
@@ -51,6 +79,9 @@
 
 .goods-card__button {
   padding: 10px 0px;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
 
   @media @tablet-width {
     width: 250px;
