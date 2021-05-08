@@ -1,7 +1,32 @@
 .order-all {
-  display: block;
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 160px;
+  background-image: url(../img/catalog-gift-mobile@1x.jpg);
+  background-size: 280px 290px;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media @tablet-width {
+    background-image: url(../img/catalog-gift-tablet@1x.jpg);
+    background-size: 708px 200px;
+    width: 708px;
+  }
 
   @media @desktop-width {
+    background-image: url(../../img/catalog-gift-desktop@1x.jpg);
+    background-size: 100% 100%;
     width: 245px;
+    margin: 0;
   }
+}
+
+.order-all__gift {
+  color: @white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  width: 160px;
+  margin: 60px auto 0;
+  .arial;
 }
