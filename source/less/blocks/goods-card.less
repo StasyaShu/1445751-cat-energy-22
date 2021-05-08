@@ -3,9 +3,9 @@
   width: inherit;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  border-top: 1px solid @grey-border-catalog;
-  padding-top: 20px;
+  grid-template-rows: min-content min-content min-content;
+  padding-top: 8px;
+  margin-bottom: 30px;
 
   @media @tablet-width {
     display: flex;
@@ -13,6 +13,9 @@
     width: 324px;
     align-items: center;
     background-color: @grey;
+    position: relative;
+    padding-bottom: 40px;
+    padding-top: 135px;
   }
 
   @media @desktop-width {
@@ -28,6 +31,11 @@
   grid-row-end: 3;
   text-align: center;
   padding-top: 30px;
+
+  @media @tablet-width {
+    position: absolute;
+    top: -120px;
+  }
 }
 
 .goods-card__img {
@@ -43,6 +51,7 @@
   @media @tablet-width {
     width: 161px;
     height: 172px;
+    margin-top: 32px;
   }
 }
 

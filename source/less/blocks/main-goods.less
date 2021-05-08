@@ -15,6 +15,7 @@
   @media @tablet-width {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 150px;
   }
 }
 
@@ -36,9 +37,18 @@
   @media @desktop-width {
     justify-content: space-between;
   }
+
+  li:not(:nth-child(7)):not(:nth-child(8)) {
+
+    @media @tablet-width {
+      margin-bottom: 140px;
+    }
+  }
 }
 
 .main-goods__item {
+
+  border-top: 1px solid @grey-border-catalog;
 
   @media @tablet-width {
     display: block;
@@ -48,6 +58,5 @@
 
   @media @desktop-width {
     width: 245px;
-    height: 512px;
   }
 }
