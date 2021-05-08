@@ -155,16 +155,11 @@
 }
 
 .questionnaire__owner-data-title {
-  font-size: 24px;
-  line-height: 26px;
-  color: @black;
-  display: block;
-  .oswald-regular;
+  max-width: 205px;
 
   @media @tablet-width {
-    font-size: 36px;
-    line-height: 36px;
     margin-bottom: 60px;
+    max-width: 352px;
   }
 }
 
@@ -236,16 +231,9 @@
 }
 
 .questionnaire__comment-title {
-  font-size: 24px;
-  line-height: 26px;
-  color: @black;
-  display: block;
   margin-bottom: 30px;
-  .oswald-regular;
 
   @media @tablet-width {
-    font-size: 36px;
-    line-height: 36px;
     margin-bottom: 60px;
   }
 }
@@ -274,20 +262,17 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
+
+  @media @desktop-width {
+    margin-bottom: 60px;
+  }
 }
 
 .questionnaire__extra-title {
-  font-size: 24px;
-  line-height: 26px;
-  color: @black;
-  display: block;
   margin-bottom: 40px;
-  .oswald-regular;
 
   @media @tablet-width {
-    font-size: 36px;
-    line-height: 36px;
-    width: 100%;
+    max-width: 280px;
   }
 }
 
