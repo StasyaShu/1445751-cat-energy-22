@@ -1,0 +1,29 @@
+.show-all-link {
+  display: block;
+  width: 280px;
+  height: 40px;
+  text-transform: uppercase;
+  color: @grey-input;
+  background-color: @grey;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  padding: 10px 0px;
+  .oswald-regular;
+
+  &:hover {
+    background-color: @grey-border-catalog;
+  }
+
+  &:active {
+    color: @grey-pale-text;
+  }
+
+  @media @tablet-width {
+    width: 250px;
+  }
+
+  @media @desktop-width {
+    width: 170px;
+  }
+}

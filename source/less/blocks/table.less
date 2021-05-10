@@ -1,0 +1,34 @@
+.table {
+  font-size: 12px;
+  line-height: 16px;
+  color: @grey-input;
+  width: 150px;
+  margin: 15px 0px;
+  .arial;
+
+  @media @tablet-width {
+    font-size: 16px;
+    line-height: 16px;
+    width: 250px;
+    height: 100px;
+  }
+
+  @media @desktop-width {
+    width: 180px;
+    margin-bottom: 30px;
+  }
+}
+
+.table__row {
+
+  td {
+
+    @media @tablet-width {
+      border-bottom: 1px solid @grey-border;
+    }
+  }
+}
+
+.table__col-2 {
+  text-align: right;
+}

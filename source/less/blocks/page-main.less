@@ -1,7 +1,10 @@
 .page-main__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+
+  @media @desktop-width {
+    // align-items: center;
+  }
 }
 
 .page-main__title {
@@ -13,6 +16,11 @@
   @media @tablet-width {
     font-size: 60px;
     line-height: 60px;
+    padding-left: 40px;
+  }
+
+  @media @desktop-width {
+    padding-left: 0;
   }
 }
 
@@ -29,5 +37,10 @@
     font-size: 20px;
     line-height: 30px;
     width: 350px;
+    padding-left: 40px;
+  }
+
+  @media @desktop-width {
+    padding-left: 0;
   }
 }

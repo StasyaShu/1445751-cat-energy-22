@@ -2,10 +2,25 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  @media @desktop-width {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
 }
 
 .extra-goods__title {
-  display: block;
+  margin-bottom: 10px;
+
+  @media @tablet-width {
+    margin-bottom: 30px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 50px;
+  }
 }
 
 .extra-goods__list {
@@ -16,14 +31,41 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  border-top: 1px solid @grey-border;
+  border-bottom: 1px solid @grey-border;
+
+  li:not(:first-child) {
+    border-top: 1px solid @grey-border;
+  }
+
+  @media @tablet-width {
+    border-left: 1px solid @grey-border;
+    border-right: 1px solid @grey-border;
+  }
+
+  @media @desktop-width {
+    border-left: none;
+    border-right: none;
+    width: 900px;
+    justify-content: center;
+  }
 }
 
 .extra-goods__item {
   width: inherit;
   display: flex;
-  flex-direction: column;
-  border-top: 1px solid #EBEBEB;
-  padding: 20px 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+
+  @media @tablet-width {
+    padding: 23px 40px;
+  }
+
+  @media @desktop-width {
+    padding: 15px 40px;
+  }
 }
 
 .extra-goods__item-title {
@@ -31,7 +73,14 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @grey-checkbox;
+  width: 100%;
   .oswald-regular;
+
+  @media @tablet-width {
+    width: 165px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra-goods__item-description {
@@ -39,8 +88,23 @@
   line-height: 14px;
   color: @grey-input;
   .arial;
+
+  @media @tablet-width {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .extra-goods__item-link {
   padding: 10px 0px;
+  width: 100%;
+
+  @media @tablet-width {
+    margin-top: 15px;
+  }
+
+  @media @desktop-width {
+    width: 244px;
+    margin: 0;
+  }
 }
