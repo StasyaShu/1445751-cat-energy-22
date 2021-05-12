@@ -44,17 +44,16 @@
     width: 172px;
     height: 196px;
   }
-}
 
-.goods-card__img--small {
+  &--small {
 
-  @media @tablet-width {
-    width: 161px;
-    height: 172px;
-    margin-top: 32px;
+    @media @tablet-width {
+      width: 161px;
+      height: 172px;
+      margin-top: 32px;
+    }
   }
 }
-
 
 .goods-card__title {
   font-size: 16px;
@@ -65,7 +64,7 @@
   text-align: left;
   display: block;
   width: 80px;
-  margin: 15px 0px;
+  margin: 15px 0;
   .oswald-regular;
 
   @media @tablet-width {
@@ -87,7 +86,7 @@
 }
 
 .goods-card__button {
-  padding: 10px 0px;
+  padding: 10px 0;
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 3;

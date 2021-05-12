@@ -26,13 +26,13 @@
         </button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link active">Главная</a>
+            <a class="main-navigation__link main-navigation__link--white active">Главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-navigation__link main-navigation__link--white" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">Подбор программы</a>
+            <a class="main-navigation__link main-navigation__link--white" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -60,9 +60,6 @@
         <h2 class="visually-hidden">Направленность диеты</h2>
         <div class="diet-direction__wrapper">
           <div class="program">
-            <svg width="50" height="50">
-              <use href="img/sprite.svg#cat-slim-mobile"></use>
-            </svg>
             <h3 class="program__title">Похудение</h3>
             <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -70,7 +67,7 @@
           </div>
           <div class="program">
             <h3 class="program__title">Набор массы</h3>
-            <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+            <p class="program__description program__description--mass">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
               Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="program__link" href="#">Каталог Pro</a>
@@ -98,44 +95,47 @@
         </div>
       </section>
       <div class="slider-container">
-        <section class="example">
-          <div class="example__wrapper">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-              Energy
-              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
-              по 16 часов в день. </p>
-            <ul class="example__stats">
-              <li class="example__stats-item">
-                <p>5 кг</p>
-                <p>снижение веса</p>
-              </li>
-              <li class="example__stats-item">
-                <p>60 дней</p>
-                <p>затрачено времени</p>
-              </li>
-            </ul>
-            <b class="example__loses">Затраты на питание: 15 000 РУБ.</b>
-          </div>
-        </section>
-        <section class="example-slider">
-          <div class="example-slider__wrapper">
-            <h2 class="visually-hidden">Изображения котов до и после диеты</h2>
-            <ul class="example-slider__list">
-              <li class="example-slider__item example-before">
-              </li>
-              <li class="example-slider__item example-after">
-              </li>
-            </ul>
-            <div class="example-slider__toggles">
-              <a class="example-slider__link" href="#">Было</a>
-              <div class="example-slider__scale">
-                <div class="example-slider__scale-toggle"> </div>
-              </div>
-              <a class="example-slider__link" href="#">Стало</a>
+        <div class="slider-container__wrapper">
+          <section class="example">
+            <div class="example__wrapper">
+              <h2 class="example__title">Живой пример</h2>
+              <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+                Energy
+                Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+                спит
+                по 16 часов в день. </p>
+              <ul class="example__stats">
+                <li class="example__stats-item">
+                  <p>5 кг</p>
+                  <p>снижение веса</p>
+                </li>
+                <li class="example__stats-item">
+                  <p>60 дней</p>
+                  <p>затрачено времени</p>
+                </li>
+              </ul>
+              <b class="example__loses">Затраты на питание: 15 000 РУБ.</b>
             </div>
-          </div>
-        </section>
+          </section>
+          <section class="example-slider">
+            <div class="example-slider__wrapper">
+              <h2 class="visually-hidden">Изображения котов до и после диеты</h2>
+              <ul class="example-slider__list">
+                <li class="example-slider__item example-before">
+                </li>
+                <li class="example-slider__item example-after">
+                </li>
+              </ul>
+              <div class="example-slider__toggles">
+                <a class="example-slider__link" href="#">Было</a>
+                <div class="example-slider__scale">
+                  <div class="example-slider__scale-toggle"> </div>
+                </div>
+                <a class="example-slider__link" href="#">Стало</a>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   </main>
