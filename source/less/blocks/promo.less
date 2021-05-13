@@ -1,7 +1,6 @@
 .promo {
   display: block;
   margin-bottom: 30px;
-  height: 550px;
   width: 100%;
   background-image: url("../img/index-cat-mobile.jpg");
   background-position: top center;
@@ -10,13 +9,13 @@
   @media @tablet-width {
     background-color: transparent;
     background-image: none;
-    margin-bottom: 300px;
+    min-height: 800px;
   }
 
   @media @desktop-width {
     position: relative;
-    margin-bottom: 100px;
     width: 100%;
+    min-height: 650px;
   }
 
   &::before {
