@@ -31,6 +31,7 @@
   @media @tablet-width {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
   }
 
   @media @desktop-width {
@@ -48,16 +49,16 @@
   color: @black;
   width: 320px;
   border-top: 1px solid @grey-border-header-mobile;
-  padding: 20px 0px;
+  padding: 20px 0;
   text-align: center;
 
 
   @media @tablet-width {
     font-size: 18px;
     line-height: 24px;
-    margin: 0px 10px;
+    margin: 0;
     border-top: none;
-    width: max-content;
+    width: auto;
   }
 
   @media @desktop-width {
@@ -78,14 +79,10 @@
     opacity: 0.3;
   }
 
-  @media @desktop-width {
-    color: @white;
-  }
-}
+  &--white {
 
-.main-navigation__link--black {
-
-  @media @desktop-width {
-    color: @black;
+    @media @desktop-width {
+      color: @white;
+    }
   }
 }

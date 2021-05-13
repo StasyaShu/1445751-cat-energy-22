@@ -1,27 +1,38 @@
 .logo {
   display: flex;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   picture {
     margin-right: 80px;
   }
 }
 
-.logo__img--text {
+.logo__img {
 
-  @media @tablet-width {
-    display: none;
-  }
-}
+  &--text {
 
-.logo__img--icon {
-
-  @media @tablet-width {
-    width: 174px;
-    height: 52px;
+    @media @tablet-width {
+      display: none;
+    }
   }
 
-  @media @desktop-width {
-    width: 202px;
-    height: 60px;
+  &--icon {
+
+    @media @tablet-width {
+      width: 174px;
+      height: 52px;
+    }
+
+    @media @desktop-width {
+      width: 202px;
+      height: 60px;
+    }
   }
 }

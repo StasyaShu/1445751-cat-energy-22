@@ -26,13 +26,13 @@
         </button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--black active" href="index.html">Главная</a>
+            <a class="main-navigation__link" href="index.html">Главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--black" href="catalog.html">Каталог продукции</a>
+            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--black">Подбор программы</a>
+            <a class="main-navigation__link active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -47,19 +47,19 @@
         <div class="questionnaire__cat">
           <ul class="questionnaire__cat-data-list">
             <li class="questionnaire__cat-data-item">
-              <label сlass="questionnaire__cat-data-label" for="name-id">Имя:*</label>
               <input сlass="questionnaire__cat-data-input text-type" type="text" name="name" id="name-id"
                 placeholder="барсик">
+              <label сlass="questionnaire__cat-data-label" for="name-id">Имя:*</label>
             </li>
             <li class="questionnaire__cat-data-item">
-              <label сlass="questionnaire__cat-data-label" for="weight-id">Вес&nbsp;(кг):*</label>
               <input сlass="questionnaire__cat-data-input number-type" type="number" name="weight" id="weight-id"
                 placeholder="7">
+              <label сlass="questionnaire__cat-data-label" for="weight-id">Вес&nbsp;(кг):*</label>
             </li>
             <li class="questionnaire__cat-data-item">
-              <label сlass="questionnaire__cat-data-label" for="age-id">Возраст&nbsp;(лет):</label>
               <input сlass="questionnaire__cat-data-input number-type" type="number" name="age" id="age-id"
                 placeholder="7">
+              <label сlass="questionnaire__cat-data-label" for="age-id">Возраст&nbsp;(лет):</label>
             </li>
           </ul>
           <ul class="questionnaire__diet">
@@ -87,14 +87,14 @@
           </div>
           <ul class="questionnaire__owner-data-list">
             <li class="questionnaire__owner-data-item">
-              <label class="questionnaire__owner-data-label" for="e-mail-id">E-mail:*</label>
               <input class="questionnaire__owner-data-input email-type" type="email" name="e-mail" id="e-mail-id"
                 placeholder="kuklachev@gmail.com">
+              <label class="questionnaire__owner-data-label" for="e-mail-id">E-mail:*</label>
             </li>
             <li class="questionnaire__owner-data-item">
-              <label class="questionnaire__owner-data-label" for="e-mail-id">Телефон:*</label>
               <input class="questionnaire__owner-data-input tel-type" type="tel" name="tel" id="tel-id"
                 placeholder="8 (960) 900-60-90">
+              <label class="questionnaire__owner-data-label" for="e-mail-id">Телефон:*</label>
             </li>
           </ul>
         </div>
@@ -147,11 +147,11 @@
       <div class="footer-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12152.049462775125!2d30.312519657058974!3d59.93943636180529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620308664875!5m2!1sru!2sru"
-          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          width="320" height="362" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="footer-logo">
         <a class="footer-logo__link" href="#">
-          <!-- TODO: footer-logo также подключить при помощи спрайтов -->
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
         </a>
       </div>
       <ul class="page-footer__social social">
