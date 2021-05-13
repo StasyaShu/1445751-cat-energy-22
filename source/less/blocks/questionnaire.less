@@ -119,38 +119,6 @@
   line-height: 30px;
 }
 
-.questionnaire__diet-type-input+label::before {
-  // TODO: поведение элементов - просмотреть еще раз консультацию
-  content: "";
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid @grey-border;
-  border-radius: 50%;
-  display: block;
-
-  &:hover {
-    border: 1px solid @dark-grey-border;
-  }
-}
-
-.questionnaire__diet-type-input:checked+label::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: @green;
-  border-radius: 50%;
-  top: 7px;
-  left: 7px;
-
-  &:hover {
-    border: 1px solid @dark-grey-border;
-  }
-}
-
 .questionnaire__owner-data {
   display: flex;
   flex-direction: column;
@@ -163,6 +131,10 @@
     margin-bottom: 60px;
     max-width: 352px;
   }
+
+  @media @desktop-width {
+    max-width: 600px;
+  }
 }
 
 .questionnaire__owner-data-list {
@@ -173,26 +145,38 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @grey-input;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
   .oswald-regular;
+
 
   @media @tablet-width {
     font-size: 20px;
     line-height: 30px;
+    gap: 0;
   }
 
   @media @desktop-width {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
 .questionnaire__owner-data-item {
-  margin: 30px 0;
   display: flex;
   align-items: center;
 
+  @media @tablet-width {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
   @media @desktop-width {
     width: auto;
+    margin: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -254,6 +238,14 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  &:hover {
+    border: 1px solid @grey-border;
+  }
+
+  &:focus {
+    border: 2px solid @grey-input;
+  }
 }
 
 .questionnaire__extra {
@@ -264,10 +256,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 80px;
   }
 
   @media @desktop-width {
-    margin-bottom: 60px;
+    gap: 30px;
+    margin-bottom: 70px;
   }
 }
 
@@ -289,6 +283,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @black;
+  gap: 15px;
+  margin-bottom: 34px;
   .oswald-regular;
 
   @media @tablet-width {
@@ -300,6 +296,7 @@
     margin-bottom: 30px;
     column-gap: 150px;
     row-gap: 30px;
+    margin-bottom: 50px;
   }
 
   @media @desktop-width {
@@ -307,10 +304,6 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
-
-.questionnaire__extra-item {
-  margin-bottom: 20px;
 }
 
 .questionnaire__extra-label {
@@ -322,53 +315,15 @@
   line-height: 30px;
 
   @media @tablet-width {
-    line-height: 40px;
-    padding-left: 65px;
-  }
-}
-
-.questionnaire__extra-input+label::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 30px;
-  height: 30px;
-  border: 1px solid @grey-border;
-  top: 0;
-  left: 0;
-
-  &:hover {
-    border: 1px solid @dark-grey-border;
-  }
-
-  @media @tablet-width {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.questionnaire__extra-input:checked+label::after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 8px;
-  left: 8px;
-  width: 18px;
-  height: 14px;
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
-
-  @media @tablet-width {
-    top: 13px;
-    left: 13px;
+    line-height: 30px;
+    padding-left: 50px;
   }
 }
 
 .questionnaire__submit-button {
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 15px;
 
   @media @tablet-width {
     font-size: 20px;
@@ -387,6 +342,7 @@
   line-height: 16px;
   color: @black;
   .arial;
+  align-self: center;
 
   @media @tablet-width {
     font-size: 16px;

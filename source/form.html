@@ -47,17 +47,17 @@
         <div class="questionnaire__cat">
           <ul class="questionnaire__cat-data-list">
             <li class="questionnaire__cat-data-item">
-              <input сlass="questionnaire__cat-data-input text-type" type="text" name="name" id="name-id"
+              <input сlass="questionnaire__cat-data-input input-error" type="text" name="name" id="name-id"
                 placeholder="барсик">
               <label сlass="questionnaire__cat-data-label" for="name-id">Имя:*</label>
             </li>
             <li class="questionnaire__cat-data-item">
-              <input сlass="questionnaire__cat-data-input number-type" type="number" name="weight" id="weight-id"
+              <input сlass="questionnaire__cat-data-input input-error" type="number" name="weight" id="weight-id"
                 placeholder="7">
               <label сlass="questionnaire__cat-data-label" for="weight-id">Вес&nbsp;(кг):*</label>
             </li>
             <li class="questionnaire__cat-data-item">
-              <input сlass="questionnaire__cat-data-input number-type" type="number" name="age" id="age-id"
+              <input сlass="questionnaire__cat-data-input input-error" type="number" name="age" id="age-id"
                 placeholder="7">
               <label сlass="questionnaire__cat-data-label" for="age-id">Возраст&nbsp;(лет):</label>
             </li>
@@ -81,25 +81,25 @@
           </ul>
         </div>
         <div class="questionnaire__owner-data">
-          <div class="title-style-container">
+          <div class="title-style-container title-style-container--measures">
             <b class="questionnaire__owner-data-title title-style-container__item">Контактные данные (владельца
               кота)</b>
           </div>
           <ul class="questionnaire__owner-data-list">
             <li class="questionnaire__owner-data-item">
-              <input class="questionnaire__owner-data-input email-type" type="email" name="e-mail" id="e-mail-id"
+              <input class="questionnaire__owner-data-input input-error" type="email" name="e-mail" id="e-mail-id"
                 placeholder="kuklachev@gmail.com">
               <label class="questionnaire__owner-data-label" for="e-mail-id">E-mail:*</label>
             </li>
             <li class="questionnaire__owner-data-item">
-              <input class="questionnaire__owner-data-input tel-type" type="tel" name="tel" id="tel-id"
+              <input class="questionnaire__owner-data-input input-error" type="tel" name="tel" id="tel-id"
                 placeholder="8 (960) 900-60-90">
               <label class="questionnaire__owner-data-label" for="e-mail-id">Телефон:*</label>
             </li>
           </ul>
         </div>
         <div class="questionnaire__comment">
-          <div class="title-style-container">
+          <div class="title-style-container title-style-container--measures">
             <b class="questionnaire__comment-title title-style-container__item">Комментарий</b>
           </div>
           <textarea class="questionnaire__comment-textarea" name="comment" id="comment-field"
@@ -142,7 +142,8 @@
     <div class="page-footer__wrapper">
       <div class="footer-contacts">
         <b class="footer-contacts__dillers">Приглашаем<br>к сотрудничеству дилеров!</b>
-        <address class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></address>
+        <address class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span>
+        </address>
       </div>
       <div class="footer-map">
         <iframe
