@@ -161,31 +161,41 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="footer-logo">
-        <a class="footer-logo__link" href="#">
+      <div class="page-footer-logo">
+        <a class="page-footer-logo__link" href="#">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
         </a>
       </div>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link--vk" href="#">
-            <!-- TODO: vk logo при помощи спрайтов -->
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link--instagram" href="#">
-            <!-- TODO: instagram logo при помощи спрайтов -->
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link--facebook" href="#">
-            <!-- TODO: facebook logo при помощи спрайтов -->
-          </a>
-        </li>
-      </ul>
+      <div class="page-footer__social">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--vkontakte">
+                <use xlink:href="img/sprite.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--instagram">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--facebook">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="page-footer__htmlacademy-name">HTML Academy</p>
-        <!-- TODO: HTML Academy logo при помощи спрайтов -->
+        <svg class="page-footer__htmlacademy-icon">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>
