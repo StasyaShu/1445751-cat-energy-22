@@ -1,6 +1,15 @@
 .main-navigation {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &--closed {
+
+    .main-navigation__list {
+      display: none;
+    }
+  }
 
   @media @tablet-width {
     flex-direction: row;
@@ -14,11 +23,40 @@
 }
 
 .main-navigation__toggle {
-  display: none;
-  width: 25px;
-  height: 25px;
+  position: absolute;
+  top: -43px;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   margin: 0;
   padding: 0;
+}
+
+.main-navigation--closed .main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: -23px;
+}
+
+.main-navigation--opened .main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: -22px;
 }
 
 .main-navigation__list {
