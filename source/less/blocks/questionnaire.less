@@ -205,15 +205,21 @@
 
   &:focus {
     border: 2px solid @grey-input;
-
-    .questionnaire__owner-data-icon {
-      fill: @green;
-      stroke: @green;
-    }
   }
 
   @media @desktop-width {
     width: 470px;
+  }
+}
+
+.questionnaire__owner-data-input:focus+.questionnaire__owner-data-icon {
+
+  &--email {
+  stroke: @green;
+  }
+
+  &--phone {
+    fill: @green;
   }
 }
 
