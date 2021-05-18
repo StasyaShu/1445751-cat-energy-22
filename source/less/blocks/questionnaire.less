@@ -41,6 +41,7 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: none;
+    margin-bottom: 55px;
   }
 
   @media @desktop-width {
@@ -49,18 +50,26 @@
 }
 
 .questionnaire__cat-data-item {
-  margin: 30px 0;
+  margin: 10px 0;
   padding: 0;
   display: flex;
   align-items: center;
 
+  @media @tablet-width {
+    margin: 23px 0;
+  }
+
   input {
     width: 100%;
     display: block;
-    margin-left: 15px;
+    margin-left: 14px;
     height: 46px;
     border: 1px solid @pale-grey-border;
     order: 2;
+
+    @media @tablet-width {
+      margin-left: 24px;
+    }
 
     &:hover {
       border: 1px solid @grey-border;
@@ -79,8 +88,8 @@
 .questionnaire__diet {
   list-style: none;
   margin: 0;
-  padding: 10px 0;
-  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 13px;
   border-bottom: 1px solid @grey-bg;
   border-width: 100%;
   font-size: 16px;
@@ -93,8 +102,8 @@
     font-size: 20px;
     line-height: 30px;
     border: 1px solid @grey-bg;
-    padding-left: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
+    padding: 0;
   }
 
   @media @desktop-width {
@@ -108,6 +117,10 @@
 .questionnaire__diet-type {
   margin: 15px 0;
   display: flex;
+
+  @media @tablet-width {
+    margin: 28px 0;
+  }
 }
 
 .questionnaire__diet-type-label {
@@ -115,8 +128,12 @@
   position: relative;
   cursor: pointer;
   user-select: none;
-  padding-left: 50px;
-  line-height: 30px;
+  padding-left: 7px;
+  line-height: 28px;
+
+  @media @tablet-width {
+    padding-left: 87px;
+  }
 }
 
 .questionnaire__owner-data {
@@ -129,7 +146,7 @@
 
   @media @tablet-width {
     margin-bottom: 60px;
-    max-width: 352px;
+    max-width: 593px;
   }
 
   @media @desktop-width {
@@ -139,13 +156,14 @@
 
 .questionnaire__owner-data-list {
   list-style: none;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
   padding: 0;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @grey-input;
-  gap: 30px;
+  gap: 14px;
   display: flex;
   flex-direction: column;
   .oswald-regular;
@@ -194,7 +212,6 @@
 .questionnaire__owner-data-input {
   width: 100%;
   display: block;
-  margin-left: 15px;
   height: 46px;
   border: 1px solid @pale-grey-border;
   order: 2;
@@ -215,7 +232,7 @@
 .questionnaire__owner-data-input:focus+.questionnaire__owner-data-icon {
 
   &--email {
-  stroke: @green;
+    stroke: @green;
   }
 
   &--phone {
@@ -228,15 +245,15 @@
 
   &--email {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 16px;
+    right: 11px;
     stroke: @grey-checkbox;
   }
 
   &--phone {
     position: absolute;
     top: 13px;
-    right: 14px;
+    right: 12px;
     fill: @black;
   }
 }
@@ -244,7 +261,10 @@
 .questionnaire__comment {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+
+  @media @tablet-width {
+    margin-bottom: 53px;
+  }
 }
 
 .questionnaire__comment-title {
@@ -255,12 +275,19 @@
   }
 }
 
+.questionnaire__comment-field {
+  margin-top: 15px;
+}
+
 .questionnaire__comment-textarea {
+  width: 100%;
+  height: 153px;
   font-size: 16px;
   line-height: 18px;
+  padding: 5px 13px;
   text-transform: uppercase;
   color: @grey-input;
-  padding: 10px 10px;
+
   border: 1px solid @pale-grey-border;
   .oswald-regular;
 
@@ -281,12 +308,13 @@
 .questionnaire__extra {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 
   @media @tablet-width {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
 
   @media @desktop-width {
@@ -324,9 +352,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 30px;
-    column-gap: 150px;
-    row-gap: 30px;
+    column-gap: 142px;
+    row-gap: 46px;
     margin-bottom: 50px;
+    margin-top: 37px;
   }
 
   @media @desktop-width {
@@ -353,7 +382,7 @@
 .questionnaire__submit-button {
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   width: 280px;
   height: 40px;
   padding: 10px 0;
@@ -362,7 +391,7 @@
     font-size: 20px;
     line-height: 0;
     height: 52px;
-    margin-right: 100px;
+    margin-right: 64px;
   }
 
   @media @desktop-width {
