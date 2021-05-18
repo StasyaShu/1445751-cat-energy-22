@@ -1,5 +1,10 @@
 .main-goods {
   width: 100%;
+  border-top: 1px solid @grey-border-catalog;
+
+  @media @tablet-width {
+    border-top: none;
+  }
 }
 
 .main-goods__wrapper {
@@ -9,6 +14,9 @@
 }
 
 .main-goods__title {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 38px;
   font-size: 36px;
   line-height: 36px;
   .oswald-regular;
@@ -16,7 +24,13 @@
   @media @tablet-width {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 120px;
+    margin-bottom: 115px;
+    margin-top: 50px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 108px;
+    margin-top: 59px;
   }
 }
 
@@ -38,6 +52,7 @@
 
   @media @desktop-width {
     justify-content: space-between;
+    gap: 54px;
   }
 }
 

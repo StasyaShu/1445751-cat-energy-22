@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content min-content;
-  padding-top: 8px;
-  margin-bottom: 30px;
+  padding-top: 2px;
+  margin-bottom: 18px;
 
   @media @tablet-width {
     display: flex;
@@ -14,7 +14,7 @@
     align-items: center;
     background-color: @grey;
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     padding-top: 135px;
   }
 
@@ -35,6 +35,10 @@
   @media @tablet-width {
     position: absolute;
     top: -120px;
+  }
+
+  @media @desktop-width {
+    top: -117px;
   }
 }
 
@@ -64,7 +68,7 @@
   text-align: left;
   display: block;
   width: 80px;
-  margin: 15px 0;
+  margin: 16px 0;
   .oswald-regular;
 
   @media @tablet-width {
@@ -77,12 +81,15 @@
   @media @desktop-width {
     font-size: 20px;
     line-height: 21px;
+    margin-top: 24px;
+    margin-bottom: 13px;
   }
 }
 
 .goods-card__properties {
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 150px;
 }
 
 .goods-card__button {
