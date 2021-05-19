@@ -1,11 +1,17 @@
 .page-footer {
   padding-bottom: 60px;
+  background-color: @grey;
+
+  @media @tablet-width {
+    padding-top: 43px;
+  }
 }
 
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
   .wrapper;
 
   @media @tablet-width {
@@ -14,9 +20,46 @@
     align-items: center;
     justify-content: space-between;
   }
+}
 
-  @media @desktop-width {
-    position: relative;
+.page-footer-logo {
+  margin-top: 40px;
+  border-bottom: 1px solid @grey-bg;
+  width: 320px;
+  text-align: center;
+  padding-bottom: 30px;
+
+  @media @tablet-width {
+    border: none;
+    width: 128px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.page-footer-logo__link {
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__social {
+  border-bottom: 1px solid @grey-bg;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 11px;
+  padding-top: 6px;
+
+  @media @tablet-width {
+    border: none;
+    margin: 0;
+    padding-top: 5px;
   }
 }
 
@@ -25,5 +68,34 @@
   color: @grey-input;
   font-size: 16px;
   line-height: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 139px;
+  margin-top: 10px;
   .arial;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media @tablet-width {
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.page-footer__htmlacademy-icon {
+  fill: @grey-social;
+
+  &:hover {
+    fill: @green;
+  }
 }

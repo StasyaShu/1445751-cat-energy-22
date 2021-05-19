@@ -1,0 +1,43 @@
+.radio {
+
+  &+label::before {
+    content: "";
+    position: absolute;
+    left: -38px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @grey-border;
+    border-radius: 50%;
+    display: block;
+
+    @media @tablet-width {
+      left: 34px;
+      width: 34px;
+      height: 34px;
+      top: -2px;
+    }
+  }
+
+  &:hover+label::before {
+    border: 1px solid @dark-grey-border;
+  }
+
+  &:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: @green;
+    border-radius: 50%;
+    top: 8px;
+    left: -30px;
+
+    @media @tablet-width {
+      width: 14px;
+      height: 14px;
+      left: 44px;
+      top: 8px;
+    }
+  }
+}

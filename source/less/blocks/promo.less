@@ -1,7 +1,6 @@
 .promo {
   display: block;
   margin-bottom: 30px;
-  height: 550px;
   width: 100%;
   background-image: url("../img/index-cat-mobile.jpg");
   background-position: top center;
@@ -10,13 +9,15 @@
   @media @tablet-width {
     background-color: transparent;
     background-image: none;
-    margin-bottom: 300px;
+    min-height: 800px;
+    margin-bottom: 63px;
   }
 
   @media @desktop-width {
     position: relative;
-    margin-bottom: 100px;
     width: 100%;
+    min-height: 650px;
+    margin-bottom: 0;
   }
 
   &::before {
@@ -32,7 +33,7 @@
       z-index: -2;
       width: 50%;
       height: 694px;
-      top: -100px;
+      top: -122px;
       right: 0;
     }
   }
@@ -52,10 +53,12 @@
     padding-left: 100px;
     position: relative;
     color: @black;
+    padding-top: 52px;
   }
 
   @media @desktop-width {
-    padding-top: 130px;
+    padding-top: 98px;
+    padding-left: 175px;
   }
 
   picture {
@@ -73,21 +76,21 @@
     z-index: -1;
     width: 709px;
     height: 609px;
-    top: 231px;
-    left: 50px;
+    top: 246px;
+    left: 28px;
   }
 
   @media @desktop-width {
     width: 552px;
     height: 499px;
-    transform: translate(510px, -200px);
+    transform: translate(530px, -228px);
   }
 }
 
 .promo__title {
   display: block;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0;
   text-align: center;
   width: 250px;
@@ -100,16 +103,17 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 41px;
     width: 500px;
     color: @black;
+    padding-left: 18px;
   }
 }
 
 .promo__slogan {
   display: block;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 27px;
   padding: 0;
   text-align: center;
   width: 250px;
@@ -125,15 +129,28 @@
     line-height: 20px;
     width: 300px;
     color: @black;
+    padding-left: 17px;
+    margin-bottom: 45px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 50px;
   }
 }
 
 .promo__button {
+
+  width: 280px;
+  height: 40px;
+  padding: 10px 0;
 
   @media @tablet-width {
     order: 3;
     width: 244px;
     height: 60px;
     display: block;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

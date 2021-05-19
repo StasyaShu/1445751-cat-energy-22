@@ -4,4 +4,57 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+
+  @media @desktop-width {
+    gap: 25px;
+  }
+}
+
+.social__link {
+  display: block;
+}
+
+.social__icon {
+  fill: @grey-social;
+
+  &:hover {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--vkontakte {
+
+    @media @tablet-width {
+      width: 30px;
+      height: 22px;
+    }
+  }
+
+  &--instagram {
+
+    @media @tablet-width {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--facebook {
+    fill: none;
+    stroke: @grey-social;
+
+    &:hover {
+      fill: none;
+      stroke: @green;
+    }
+
+    @media @tablet-width {
+      width: 28px;
+      height: 33px;
+    }
+  }
 }

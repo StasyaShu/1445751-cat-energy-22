@@ -20,7 +20,7 @@
         <img class="logo__img logo__img--text" src="img/logo-header-catenergy-mobile.svg" width="101" height="18"
           alt="Cat Energy">
       </a>
-      <nav class="main-navigation">
+      <nav class="main-navigation main-navigation--opened main-navigation--nojs">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -47,17 +47,17 @@
         <div class="questionnaire__cat">
           <ul class="questionnaire__cat-data-list">
             <li class="questionnaire__cat-data-item">
-              <input сlass="questionnaire__cat-data-input text-type" type="text" name="name" id="name-id"
+              <input сlass="questionnaire__cat-data-input input-error" type="text" name="name" id="name-id"
                 placeholder="барсик">
               <label сlass="questionnaire__cat-data-label" for="name-id">Имя:*</label>
             </li>
             <li class="questionnaire__cat-data-item">
-              <input сlass="questionnaire__cat-data-input number-type" type="number" name="weight" id="weight-id"
+              <input сlass="questionnaire__cat-data-input input-error" type="number" name="weight" id="weight-id"
                 placeholder="7">
               <label сlass="questionnaire__cat-data-label" for="weight-id">Вес&nbsp;(кг):*</label>
             </li>
             <li class="questionnaire__cat-data-item">
-              <input сlass="questionnaire__cat-data-input number-type" type="number" name="age" id="age-id"
+              <input сlass="questionnaire__cat-data-input input-error" type="number" name="age" id="age-id"
                 placeholder="7">
               <label сlass="questionnaire__cat-data-label" for="age-id">Возраст&nbsp;(лет):</label>
             </li>
@@ -81,29 +81,36 @@
           </ul>
         </div>
         <div class="questionnaire__owner-data">
-          <div class="title-style-container">
+          <div class="title-style-container title-style-container--measures">
             <b class="questionnaire__owner-data-title title-style-container__item">Контактные данные (владельца
               кота)</b>
           </div>
           <ul class="questionnaire__owner-data-list">
             <li class="questionnaire__owner-data-item">
-              <input class="questionnaire__owner-data-input email-type" type="email" name="e-mail" id="e-mail-id"
+              <input class="questionnaire__owner-data-input input-error" type="email" name="e-mail" id="e-mail-id"
                 placeholder="kuklachev@gmail.com">
+              <svg class="questionnaire__owner-data-icon questionnaire__owner-data-icon--email" width="22" height="22">
+                <use xlink:href="img/sprite.svg#email"></use>
+              </svg>
               <label class="questionnaire__owner-data-label" for="e-mail-id">E-mail:*</label>
             </li>
             <li class="questionnaire__owner-data-item">
-              <input class="questionnaire__owner-data-input tel-type" type="tel" name="tel" id="tel-id"
+              <input class="questionnaire__owner-data-input input-error" type="tel" name="tel" id="tel-id"
                 placeholder="8 (960) 900-60-90">
+              <svg class="questionnaire__owner-data-icon questionnaire__owner-data-icon--phone" width="20" height="20">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
               <label class="questionnaire__owner-data-label" for="e-mail-id">Телефон:*</label>
             </li>
           </ul>
         </div>
         <div class="questionnaire__comment">
-          <div class="title-style-container">
+          <div class="title-style-container title-style-container--measures">
             <b class="questionnaire__comment-title title-style-container__item">Комментарий</b>
           </div>
-          <textarea class="questionnaire__comment-textarea" name="comment" id="comment-field"
-            rows="10">Расскажите обо всех повадках кота</textarea>
+          <div class="questionnaire__comment-field">
+            <textarea class="questionnaire__comment-textarea" name="comment" id="comment-field" rows="10">Расскажите обо всех повадках кота</textarea>
+          </div>
         </div>
         <div class="questionnaire__extra">
           <div class="title-style-container">
@@ -136,44 +143,60 @@
         </div>
       </form>
     </div>
-  </main>
-
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="footer-contacts">
-        <b class="footer-contacts__dillers">Приглашаем<br>к сотрудничеству дилеров!</b>
-        <address class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></address>
+    <section class="cooperation">
+      <div class="cooperation__wrapper">
+        <h2 class="visually-hidden">Блок с адресом и картой</h2>
+        <div class="cooperation__contacts">
+          <b class="cooperation__title">Приглашаем<br>к сотрудничеству дилеров!</b>
+          <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
-      <div class="footer-map">
+      <div class="cooperation__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12152.049462775125!2d30.312519657058974!3d59.93943636180529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620308664875!5m2!1sru!2sru"
           width="320" height="362" allowfullscreen="" loading="lazy"></iframe>
       </div>
-      <div class="footer-logo">
-        <a class="footer-logo__link" href="#">
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer-logo">
+        <a class="page-footer-logo__link" href="#">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
         </a>
       </div>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link--vk" href="#">
-            <!-- TODO: vk logo при помощи спрайтов -->
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link--instagram" href="#">
-            <!-- TODO: instagram logo при помощи спрайтов -->
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link--facebook" href="#">
-            <!-- TODO: facebook logo при помощи спрайтов -->
-          </a>
-        </li>
-      </ul>
+      <div class="page-footer__social">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--vkontakte" width="23" height="16">
+                <use xlink:href="img/sprite.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--instagram" width="16" height="16">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--facebook" width="22" height="22">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="page-footer__htmlacademy-name">HTML Academy</p>
-        <!-- TODO: HTML Academy logo при помощи спрайтов -->
+        <svg class="page-footer__htmlacademy-icon" width="27" height="34">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>
