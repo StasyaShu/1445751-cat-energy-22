@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -47,6 +47,10 @@
           <li class="main-goods__item goods-card">
             <a class="goods-card__image">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog-chicken-small@1x.webp 1x, img/catalog-chicken-small@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-mobile-chicken-small@1x.webp 1x, img/catalog-mobile-chicken-small@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog-chicken-small@1x.png 1x, img/catalog-chicken-small@2x.png 2x">
                 <img class="goods-card__img goods-card__img--small" src="img/catalog-mobile-chicken-small@1x.png"
@@ -74,6 +78,10 @@
           <li class="main-goods__item goods-card">
             <a class="goods-card__image">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog-chicken-big@1x.webp 1x, img/catalog-chicken-big@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-mobile-chicken-big@1x.webp 1x, img/catalog-mobile-chicken-big@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog-chicken-big@1x.png 1x, img/catalog-chicken-big@2x.png 2x">
                 <img class="goods-card__img" src="img/catalog-mobile-chicken-big@1x.png"
@@ -101,6 +109,10 @@
           <li class="main-goods__item goods-card">
             <a class="goods-card__image">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog-fish-small@1x.webp 1x, img/catalog-fish-small@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-mobile-fish-small@1x.webp 1x, img/catalog-mobile-fish-small@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog-fish-small@1x.png 1x, img/catalog-fish-small@2x.png 2x">
                 <img class="goods-card__img goods-card__img--small" src="img/catalog-mobile-fish-small@1x.png"
@@ -128,6 +140,10 @@
           <li class="main-goods__item goods-card">
             <a class="goods-card__image">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog-fish-big@1x.webp 1x, img/catalog-fish-big@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-mobile-fish-big@1x.webp 1x, img/catalog-mobile-fish-big@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog-fish-big@1x.png 1x, img/catalog-fish-big@2x.png 2x">
                 <img class="goods-card__img" src="img/catalog-mobile-fish-big@1x.png"
@@ -155,6 +171,10 @@
           <li class="main-goods__item goods-card">
             <a class="goods-card__image">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog-buckwheat-small@1x.webp 1x, img/catalog-buckwheat-small@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-mobile-buckwheat-small@1x.webp 1x, img/catalog-mobile-buckwheat-small@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog-buckwheat-small@1x.png 1x, img/catalog-buckwheat-small@2x.png 2x">
                 <img class="goods-card__img goods-card__img--small" src="img/catalog-mobile-buckwheat-small@1x.png"
@@ -182,6 +202,10 @@
           <li class="main-goods__item goods-card">
             <a class="goods-card__image">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog-buckwheat-big@1x.webp 1x, img/catalog-buckwheat-big@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-mobile-buckwheat-big@1x.webp 1x, img/catalog-mobile-buckwheat-big@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog-buckwheat-big@1x.png 1x, img/catalog-buckwheat-big@2x.png 2x">
                 <img class="goods-card__img" src="img/catalog-mobile-buckwheat-big@1x.png"
@@ -209,6 +233,10 @@
           <li class="main-goods__item goods-card">
             <a class="goods-card__image">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog-rice@1x.webp 1x, img/catalog-rice@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-mobile-rice@1x.webp 1x, img/catalog-mobile-rice@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog-rice@1x.png 1x, img/catalog-rice@2x.png 2x">
                 <img class="goods-card__img goods-card__img--small" src="img/catalog-mobile-rice@1x.png"
                   srcset="img/catalog-mobile-rice@2x.png 2x" width="70" height="90" alt="Cat Energy с рисом 500 г">
@@ -304,21 +332,21 @@
         <ul class="social">
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg class="social__icon social__icon--vkontakte" width="23" height="16">
+              <svg class="social__icon social__icon--vkontakte" width="23" height="16" viewbox="0 0 23 16">
                 <use xlink:href="img/sprite.svg#vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg class="social__icon social__icon--instagram" width="16" height="16">
+              <svg class="social__icon social__icon--instagram" width="16" height="16" viewbox="0 0 16 16">
                 <use xlink:href="img/sprite.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg class="social__icon social__icon--facebook" width="22" height="22">
+              <svg class="social__icon social__icon--facebook" width="22" height="22" viewbox="0 0 22 22">
                 <use xlink:href="img/sprite.svg#facebook"></use>
               </svg>
             </a>
