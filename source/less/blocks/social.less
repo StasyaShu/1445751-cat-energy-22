@@ -5,7 +5,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 32px;
+  gap: 35px;
+  transform: translate(0px, -2px);
+
+  @media @tablet-width {
+    gap: 27px;
+  }
 
   @media @desktop-width {
     gap: 25px;

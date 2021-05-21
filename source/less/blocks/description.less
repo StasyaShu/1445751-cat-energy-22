@@ -1,14 +1,14 @@
 .description {
   width: 100%;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
 
   @media @tablet-width {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 76px;
   }
 
   @media @desktop-width {
-    margin-bottom: 196px;
+    margin-bottom: 193px;
   }
 
   &::after {
@@ -62,16 +62,16 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 29px;
+  gap: 27px;
 
   @media @tablet-width {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 605px;
+    width: 611px;
     justify-content: space-between;
     counter-reset: item;
     position: relative;
-    gap: 8px;
+    gap: 6px;
   }
 
   @media @desktop-width {
@@ -93,7 +93,7 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 190px;
-    margin: 60px 0;
+    margin: 62px 0;
 
     &::before {
       counter-increment: item;
@@ -217,6 +217,12 @@
         top: -2px;
       }
     }
+  }
+
+  @media @desktop-width {
+    height: 190px;
+    margin: 62px 0;
+    width: 246px;
   }
 }
 

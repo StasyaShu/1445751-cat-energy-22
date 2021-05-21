@@ -79,6 +79,10 @@
     &:focus {
       border: 2px solid @grey-input;
     }
+
+    &:invalid {
+      border: 2px solid @pink;
+    }
   }
 
   label {
@@ -122,18 +126,18 @@
   @media @tablet-width {
     margin: 28px 0;
   }
-}
 
-.questionnaire__diet-type-label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-  padding-left: 7px;
-  line-height: 28px;
+  label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 7px;
+    line-height: 28px;
 
-  @media @tablet-width {
-    padding-left: 87px;
+    @media @tablet-width {
+      padding-left: 87px;
+    }
   }
 }
 
