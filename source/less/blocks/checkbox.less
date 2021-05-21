@@ -11,8 +11,8 @@
     left: 0;
 
     @media @tablet-width {
-      width: 36px;
-      height: 36px;
+      width: 41px;
+      height: 41px;
       top: -4px;
       left: 0;
     }
@@ -34,6 +34,10 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
+  }
+
+  &:disabled+label {
+    opacity: 0.3;
   }
 
   @media @tablet-width {
