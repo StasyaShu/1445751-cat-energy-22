@@ -5,7 +5,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content min-content;
   padding-top: 2px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 
   @media @tablet-width {
     display: flex;
@@ -38,7 +38,7 @@
   }
 
   @media @desktop-width {
-    top: -117px;
+    top: -116px;
   }
 }
 
@@ -70,12 +70,14 @@
   width: 80px;
   margin: 16px 0;
   .oswald-regular;
+  transform: translateX(10px);
 
   @media @tablet-width {
     width: 150px;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
+    transform: translateX(4px);
   }
 
   @media @desktop-width {
@@ -83,12 +85,13 @@
     line-height: 21px;
     margin-top: 24px;
     margin-bottom: 13px;
+    transform: translate(4px, -1px);
   }
 }
 
 .goods-card__properties {
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   width: 150px;
 }
 
