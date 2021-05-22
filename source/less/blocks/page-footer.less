@@ -46,6 +46,17 @@
   &:active {
     opacity: 0.6;
   }
+
+  &--main {
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
 .page-footer__social {
@@ -75,6 +86,13 @@
   gap: 139px;
   margin-top: 9px;
   .arial;
+
+  &:hover {
+
+    .page-footer__htmlacademy-icon {
+      fill: @green;
+    }
+  }
 
   &:active {
     opacity: 0.3;

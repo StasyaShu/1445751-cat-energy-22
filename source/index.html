@@ -5,13 +5,15 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
+      <a class="page-header__logo logo logo--main">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -134,7 +136,7 @@
             <div class="example-slider__toggles">
               <a class="example-slider__link" href="#">Было</a>
               <div class="example-slider__scale">
-                <div class="example-slider__scale-toggle"> </div>
+                <div class="example-slider__scale-toggle"><p class="visually-hidden">Ручка-переключения изображений кота до диеты и после</p></div>
               </div>
               <a class="example-slider__link" href="#">Стало</a>
             </div>
@@ -162,7 +164,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer-logo">
-        <a class="page-footer-logo__link" href="#">
+        <a class="page-footer-logo__link page-footer-logo__link--main">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
         </a>
       </div>
