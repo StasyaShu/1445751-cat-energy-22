@@ -7,13 +7,13 @@
     width: 30px;
     height: 30px;
     border: 1px solid @grey-border;
-    top: 0;
+    top: 2px;
     left: 0;
 
     @media @tablet-width {
-      width: 41px;
-      height: 41px;
-      top: -4px;
+      width: 40px;
+      height: 40px;
+      top: -6px;
       left: 0;
     }
   }
@@ -26,14 +26,23 @@
     content: "";
     position: absolute;
     display: block;
-    top: 8px;
-    left: 8px;
+    top: 11px;
+    left: 7px;
     width: 18px;
     height: 14px;
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
+
+    @media @tablet-width {
+      top: 7px;
+      left: 10px;
+    }
+
+    @media @desktop-width {
+      left: 11px;
+    }
   }
 
   &:disabled+label {
