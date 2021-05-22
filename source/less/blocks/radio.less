@@ -1,6 +1,5 @@
 .radio {
-
-  &+label::before {
+  & + label::before {
     content: "";
     position: absolute;
     left: -38px;
@@ -19,11 +18,11 @@
     }
   }
 
-  &:hover+label::before {
+  &:hover + label::before {
     border: 1px solid @dark-grey-border;
   }
 
-  &:checked+label::after {
+  &:checked + label::after {
     content: "";
     position: absolute;
     width: 12px;
@@ -41,7 +40,7 @@
     }
   }
 
-  &:disabled+label {
+  &:disabled + label {
     opacity: 0.3;
   }
 }

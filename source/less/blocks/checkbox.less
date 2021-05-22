@@ -1,6 +1,5 @@
 .checkbox {
-
-  &+label::before {
+  & + label::before {
     content: "";
     position: absolute;
     display: block;
@@ -18,11 +17,11 @@
     }
   }
 
-  &:hover+label::before {
+  &:hover + label::before {
     border: 1px solid @dark-grey-border;
   }
 
-  &:checked+label::after {
+  &:checked + label::after {
     content: "";
     position: absolute;
     display: block;
@@ -46,7 +45,7 @@
     }
   }
 
-  &:disabled+label {
+  &:disabled + label {
     opacity: 0.3;
   }
 
